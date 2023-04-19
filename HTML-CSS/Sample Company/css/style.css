@@ -1,0 +1,244 @@
+@charset 'utf8';
+
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+body {
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    background: #fff;
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 2em;
+}
+
+#main {
+    width: 73%;
+    float: right;
+    padding-bottom: 95px;
+    background: #fff;
+}
+
+#main h2 {
+    height: 38px;
+    margin: 15px 0;
+    padding-left: 35px;
+    background: #000 url(../images/mark1.png) no-repeat left 10px center;
+    font-size: 15px;
+    color: #fff;
+    line-height: 38px;
+}
+
+#main h3 {
+    height: 38px;
+    margin: 15px 0;
+    padding: 0 15px;
+    font-size: 15px;
+    background: linear-gradient(#fff, #ebebeb);
+    color: #333;
+    border: 1px solid #ccc;
+    line-height: 38px;
+}
+
+#main h4 {
+    padding: 0 15px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+#main p {
+    padding: 0 15px;
+}
+
+.news dt {
+    display: inline-block;
+    width: 14%;
+    min-width: 100px;
+    border-bottom: 1px solid #ccc;
+}
+
+.news dd {
+    display: inline-block;
+    width: 86%;
+    border-bottom: 1px solid #ccc;
+}
+
+.news {
+    height: 150px;
+    padding-left: 15px;
+    overflow-y: scroll;
+}
+
+.new {
+    background: #ED462F;
+    color: #fff;
+    padding: 0 5px;
+    border-radius: 3px;
+    font-size: 10px;
+}
+
+#sidebar{
+    width: 23%;
+    float: left;
+}
+
+#sidebar h2 {
+    padding-left: 10px;
+    border-left: 3px solid #000;
+    margin-bottom: 10px;
+    line-height: 1em;
+}
+
+#sidebar ul {
+    list-style: none;
+}
+
+#sidebar ul li {
+    height: 32px;
+    background: #fff;
+    line-height: 32px;
+    border-bottom: 1px solid #ccc;
+}
+
+#sidebar ul li a {
+    display: block;
+    padding-left: 12px;
+    color: #333;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+#sidebar ul li a:hover {
+    background: #000;
+    color: #fff;
+}
+
+#sidebar ul li:last-child {
+    border: none;
+}
+
+.box {
+    margin: 15px 0;
+}
+
+.bg-gray {
+    padding: 20px 15px;
+    border: 1px solid #ccc;
+    background: #e4e4e4;
+}
+
+footer {
+    background: #000;
+}
+
+footer p {
+    font-size: 12px;
+    line-height: 2em;
+    color: #fff;
+    text-align: center;
+}
