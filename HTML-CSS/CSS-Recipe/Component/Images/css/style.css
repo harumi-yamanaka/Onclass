@@ -1,0 +1,39 @@
+@charset 'utf8';
+
+.frame {
+    background: #333;
+    height: 300px;
+    margin: 0 0 1.5rem 0;
+    width: 300px;
+}
+
+.frame img {
+    height: 100%;
+    width: 100%;
+}
+
+.cover {
+    object-fit: cover;
+}
+
+.contain {
+    object-fit: contain;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 2rem;
+    width: calc(2rem * 2 + 1rem * 2 + 300px *3);
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 300px 300px 300px;
+    grid-gap: 1rem;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <form action="#">
+        <div class="form-group">
+          <label for="job">職業</label>
+          <div class="custom-select">
+            <select class="form-control" id="job" name="job">
+              <option value="0">プログラマー</option>
+              <option value="1">デザイナー</option>
+              <option value="2">ディレクター</option>
+            </select>
+          </div>
+        </div>
+      </form>
+      <script>
+        // UserAgentでIE判定
+        function isIE() {
+          const userAgent = window.navigator.userAgent.toLowerCase();
+         return (
+         userAgent.indexOf('msie') >= 0 ||
+           userAgent.indexOf('trident') >= 0
+           );
+        }    
+      
+        // IE以外のモダンブラウザに`modern`クラス付与
+        // `modern`クラスが付与されたセレクトボックスのみカスタム矢印が表示される
+        function enableCustomSelect() {
+          const customSelect = document.querySelector('.custom-select');
+          customSelect.className += ' modern';
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+          if (!isIE()) {
+            enableCustomSelect();
+          }
+        });
+      </script>
+  </body>
+</html>

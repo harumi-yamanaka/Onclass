@@ -1,0 +1,26 @@
+@charset 'utf8';
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}   
+
+.header {
+    background-color: #7effdb;
+    padding: 1rem;
+}
+ 
+.main {
+    background-color: #b693fe;
+    padding: 1rem;
+    margin: 0 auto;
+    min-width: 600px;
+    width: 100%;
+    flex: 1 1 auto;
+}
+
+.footer {
+    background-color: #ff9de2;
+    padding: 1rem;
+}

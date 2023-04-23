@@ -1,0 +1,77 @@
+@charset 'utf8';
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.talk-list {
+    background-color: #fff;
+    font-size: .85rem;
+    list-style: none;
+    margin: 0;
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+.talk-item + .talk-item {
+    margin-top: 2rem;
+}
+
+.talk {
+    align-items: flex-start;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.balloon {
+    background-color: #eee;
+    border-radius: 6px;
+    flex: 1 1 auto;
+    line-height: 1.5;
+    margin: .25rem 0 0 0 ;
+    padding: .75rem 1rem;
+    position: relative;
+}
+
+/* 三角形 */
+.balloon::before {
+    content: "";
+    border: 12px solid transparent;
+    border-right-color: #eee;
+    display: block;
+    left: -24px;
+    position: absolute;
+    top: 8px;
+}
+
+.talk.you .balloon {
+    background-color: #a9eec2;
+}
+
+.talk.you .balloon::before {
+    border-right-color: transparent;
+    border-left-color: #a9eec2;
+    left: auto;
+    right: -24px;
+}
+
+.talk.you .avatar {
+    margin: 0 0 0 1.5rem;
+}
+
+.avatar {
+    display: inline-block;
+    flex: 0 0 auto;
+    margin: 0 1.5rem 0 0;
+    height: 4rem;
+    width: 4rem;
+}
+
+.avatar-image {
+    border-radius: 9999px;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}

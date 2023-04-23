@@ -1,0 +1,37 @@
+@charset 'utf8';
+
+.text {
+    background-color: lightpink;
+    margin: 0 0 1rem 0;
+}
+
+.text-ellipsis {
+    background-color: lightskyblue;
+/* テキストを丸めるためのスタイル */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.text-multiline-ellipsis {
+    background-color: lightgreen;
+/* テキストを丸めるためのスタイル */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+}
+
+
+.container {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 1.25rem;
+    margin: 0 0 1rem 0;
+}
